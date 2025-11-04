@@ -462,3 +462,4 @@ C:\Users\saed\OneDrive\Desktop\ama\amazoon\amazoon\obj\Debug\net8.0\refint\amazo
 C:\Users\saed\OneDrive\Desktop\ama\amazoon\amazoon\obj\Debug\net8.0\amazoon.pdb
 C:\Users\saed\OneDrive\Desktop\ama\amazoon\amazoon\obj\Debug\net8.0\amazoon.genruntimeconfig.cache
 C:\Users\saed\OneDrive\Desktop\ama\amazoon\amazoon\obj\Debug\net8.0\ref\amazoon.dll
+C:\Users\saed\OneDrive\Desktop\ama\amazoon\amazoon\obj\Debug\net8.0\amazoon.sourcelink.json

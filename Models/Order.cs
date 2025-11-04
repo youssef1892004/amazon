@@ -8,8 +8,9 @@ namespace amazoon.Models
    
         public class Order
         {
-            [Key]
-            public int OrderId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+            public string OrderId { get; set; }
 
             [Required]
             [Column(TypeName = "decimal(10,2)")]
@@ -22,7 +23,7 @@ namespace amazoon.Models
             public User? User { get; set; }
 
 
-            public ICollection<OrderItem>? OrderItems { get; set; } 
+            public ICollection<OrderItem>?0 OrderItems { get; set; } 
             public Payment? Payment { get; set; }
         }
     }

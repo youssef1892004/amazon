@@ -6,9 +6,9 @@ namespace amazoon.Models
 {
     public class Product
     {
-
+            [DatabaseGenerated(DatabaseGeneratedOption.None)]
             [Key]
-            public int ProductId { get; set; }
+            public string ProductId { get; set; }
 
             [Required, StringLength(255)]
             public string? Name { get; set; }

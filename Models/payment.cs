@@ -8,8 +8,9 @@ namespace amazoon.Models
 
         public class Payment
         {
+            [DatabaseGenerated(DatabaseGeneratedOption.None)]
             [Key]
-            public int PaymentId { get; set; }
+            public string PaymentId { get; set; }
 
             [Required, StringLength(100)]
             public string? PaymentMethod { get; set; }
@@ -17,9 +18,7 @@ namespace amazoon.Models
             [Required, StringLength(50)]
             public string? PaymentStatus { get; set; }
 
-            [Required]
-            [Column(TypeName = "decimal(10,2)")]
-            public decimal Amount { get; set; }
+          
 
             public DateTime PaymentDate { get; set; } = DateTime.Now;
 

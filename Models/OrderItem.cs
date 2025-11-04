@@ -6,8 +6,9 @@ namespace amazoon.Models
   
         public class OrderItem
         {
+            [DatabaseGenerated(DatabaseGeneratedOption.None)]
             [Key]
-            public int OrderItemId { get; set; }
+            public string OrderItemId { get; set; }
 
             [Required]
             public int Quantity { get; set; }
@@ -21,7 +22,7 @@ namespace amazoon.Models
             public Order? Order { get; set; }
 
 
-            public int ProductId { get; set; }
+            public int ProductId { get; set; }s
             public Product? Product { get; set; }
         }
     }

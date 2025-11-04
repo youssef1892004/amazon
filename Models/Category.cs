@@ -5,8 +5,10 @@ namespace amazoon.Models
   
         public class Category
         {
-            [Key]
-            public int CategoryId { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+            public string CategoryId { get; set; }
 
             [Required]
             [StringLength(255)]

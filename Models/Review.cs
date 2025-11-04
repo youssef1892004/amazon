@@ -5,8 +5,9 @@ namespace amazoon.Models
   
         public class Review
         {
+            [DatabaseGenerated(DatabaseGeneratedOption.None)]
             [Key]
-            public int ReviewId { get; set; }
+            public string ReviewId { get; set; }
 
             [Range(1, 5)]
             public int Rating { get; set; }
